@@ -12,5 +12,5 @@
             return $num2 * run_code ($num1 - 1);
         }
     }
-    run_code (10);
+    run_code ((float) 10);
 ?>
