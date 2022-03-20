@@ -9,7 +9,7 @@ function run_code
     else
         num1=$number
         num2=$number
-        for i in 0...999
+        for i in {0..999}
         do
             num2=$(( num2 * number ))
         done
