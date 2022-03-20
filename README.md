@@ -8,12 +8,12 @@ Soon, it'll only count the time taken just by the algorithm. Untill then, JavaSc
 
 ## Example
 ```
-c:      0.003
+c:          0.003
 c++:        0.003
 php:        0.058
-c#:     0.066
+c#:         0.066
 python:     0.116
-js:     0.182
+js:         0.182
 java:       0.379
 bash:       0.586
 ```
