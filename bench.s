@@ -24,13 +24,7 @@ run_code:
         jmp return
 
     not_equal_to_one:
-        mov -8(%rbp), %rcx
-        sub $1, %rcx
-        push %rcx
-        # TODO: segfault fix
-        call run_code
-        mov -8(%rbp), %rcx
-        imul %rcx, %rax
+        # TODO: pending
 
     return:
         pop %rbp
