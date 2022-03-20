@@ -11,9 +11,9 @@ Soon, it'll only count the time taken just by the algorithm. Untill then, JavaSc
 c:          0.003
 c++:        0.003
 php:        0.058
-c#:         0.066
-python:     0.116
-js:         0.182
-java:       0.379
-bash:       0.586
+c#:         0.060
+python:     0.107
+js:         0.167
+java:       0.378
+bash:       2.905
 ```
