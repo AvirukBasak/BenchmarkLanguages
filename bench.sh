@@ -7,8 +7,14 @@ function run_code
     then
         echo 1;
     else
-        num=$( run_code $(( number - 1 )) );
-        echo $(( number * num ));
+        num1=$number
+        num2=$number
+        for i in 0...999
+        do
+            num2=$(( num2 * number ))
+        done
+        num=$( run_code $(( num1 - 1 )) );
+        echo $(( num2 * num ));
     fi
 
 }

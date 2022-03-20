@@ -1,12 +1,18 @@
-int run_code (int number)
+double run_code (double number)
 {
     if (number == 1)
         return 1;
-    else
-        return number * run_code (number - 1);
+    else {
+        double num1 = number;
+        double num2 = number;
+        for (double i = 0; i < number * 1000; i++) {
+            num2 *= number;
+        }
+        return num2 * run_code (num1 - 1);
+    }
 }
 
 int main (int argsc, char *argsv[])
 {
-    run_code (100);
+    run_code (10);
 }

@@ -1,7 +1,11 @@
 def run_code (number):
-    if (number == 1):
+    if number == 1:
         return 1
     else:
-        return number * run_code (number - 1)
+        num1 = number
+        num2 = number
+        for i in range (0, 1000):
+            num2 *= number
+        return num2 * run_code (num1 - 1)
 
-run_code (100)
+run_code (float (10))
