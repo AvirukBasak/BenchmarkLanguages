@@ -2,7 +2,7 @@
 
 function run_code
 {
-    number=$1;
+    number=$1
     if (( $number == 1 ))
     then
         echo 1;
@@ -13,10 +13,10 @@ function run_code
         do
             num2=$(( num2 * number ))
         done
-        num=$( run_code $(( num1 - 1 )) );
-        echo $(( num2 * num ));
+        num=$( run_code $(( num1 - 1 )) )
+        echo $(( num2 * num ))
     fi
 
 }
 
-run_code 100 > /dev/null;
+run_code 100 > /dev/null
