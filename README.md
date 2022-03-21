@@ -27,10 +27,10 @@ Language    Time taken (s)
 
 c:          0.003
 c++:        0.003
-php:        0.058
-c#:         0.060
-python:     0.107
-js:         0.167
-java:       0.378
-bash:       2.905
+php:        0.056
+c#:         0.058
+python:     0.105
+js:         0.159
+java:       1.670
+bash:       2.335
 ```
