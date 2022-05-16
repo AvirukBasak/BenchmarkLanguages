@@ -1,4 +1,4 @@
-# Benchmark Languages
+# Language Benchmark
 Speed comparison b/w languages
 
 ## Run
