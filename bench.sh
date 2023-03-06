@@ -9,7 +9,7 @@ function run_code
     else
         num1=$number
         num2=$number
-        for i in {0..$(( $number * 1000))}
+        for (( i = 0; i <= $(( number * 1000 )); i++ ))
         do
             num2=$(( num2 * number ))
         done
@@ -18,4 +18,4 @@ function run_code
     fi
 }
 
-run_code 100 > /dev/null
+run_code 10 > /dev/null

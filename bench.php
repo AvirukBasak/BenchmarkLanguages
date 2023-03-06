@@ -14,4 +14,4 @@ function run_code($number)
     }
 }
 
-run_code((float) 10);
+run_code(10);

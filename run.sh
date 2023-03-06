@@ -15,24 +15,28 @@ printf "c++:\t\t"
 g++ -o3 bench.cpp -o bin/benchcpp
 time ./bin/benchcpp
 
-printf "php:\t\t"
-time php -f bench.php
+printf "rust:\t\t"
+rustc -C opt-level=3 bench.rs -o bin/benchrs
+time ./bin/benchrs
 
 printf "c#:\t\t"
 mcs bench.cs
 time mono bench.exe
 mv bench.exe bin/
 
-printf "python:\t\t"
-time python3 bench.py
-
-printf "js:\t\t"
-time node bench.js
-
 printf "java:\t\t"
 javac bench.java
 time java bench
 mv bench.class bin/
 
+printf "js:\t\t"
+time node bench.js
+
+printf "php:\t\t"
+time php -f bench.php
+
 printf "bash:\t\t"
 time bash bench.sh
+
+printf "python:\t\t"
+time python3 bench.py

@@ -4,8 +4,8 @@ def run_code(number):
     else:
         num1 = number
         num2 = number
-        for i in range (0, int(number * 1000)):
+        for i in range (0, number * 1000):
             num2 *= number
         return num2 * run_code(num1 - 1)
 
-run_code(float(10))
+run_code(10)
