@@ -1,6 +1,6 @@
 public class bench
 {
-    public static double runCode (double number)
+    public static double runCode(double number)
     {
         if (number == 1)
             return 1;
@@ -10,11 +10,11 @@ public class bench
             for (double i = 0; i < number * 1000; i++) {
                 num2 *= number;
             }
-            return num2 * runCode (num1 - 1);
+            return num2 * runCode(num1 - 1);
         }
     }
-    public static void main (String args[])
+    public static void main(String args[])
     {
-        runCode (10);
+        runCode(10);
     }
 }

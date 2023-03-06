@@ -1,4 +1,4 @@
-function runCode (number)
+function runCode(number)
 {
     if (number === 1)
         return 1;
@@ -8,8 +8,8 @@ function runCode (number)
         for (let i = 0; i < number * 1000; i++) {
             num2 *= number;
         }
-        return num2 * runCode (num1 - 1);
+        return num2 * runCode(num1 - 1);
     }
 }
 
-runCode (10);
+runCode(10);

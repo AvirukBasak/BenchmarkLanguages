@@ -1,4 +1,4 @@
-double run_code (double number)
+double run_code(double number)
 {
     if (number == 1)
         return 1;
@@ -8,11 +8,11 @@ double run_code (double number)
         for (double i = 0; i < number * 1000; i++) {
             num2 *= number;
         }
-        return num2 * run_code (num1 - 1);
+        return num2 * run_code(num1 - 1);
     }
 }
 
-int main (int argsc, char *argsv[])
+int main(int argc, char** argv)
 {
-    run_code (10);
+    run_code(10);
 }

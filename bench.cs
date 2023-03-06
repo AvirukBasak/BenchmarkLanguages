@@ -2,7 +2,7 @@ using System;
 
 public class bench
 {
-    public static double RunCode (double number)
+    public static double RunCode(double number)
     {
         if (number == 1)
             return 1;
@@ -12,11 +12,11 @@ public class bench
             for (double i = 0; i < number * 1000; i++) {
                 num2 *= number;
             }
-            return num2 * RunCode (num1 - 1);
+            return num2 * RunCode(num1 - 1);
         }
     }
-    public static void Main (String[] args)
+    public static void Main(String[] args)
     {
-        RunCode (10);
+        RunCode(10);
     }
 }
